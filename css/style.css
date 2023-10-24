@@ -40,7 +40,8 @@ h2 {
 }
 
 .main-box {
-	display: table;
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 	margin: 40px 0;
 }
@@ -49,11 +50,16 @@ h2 {
 	float: left;
 }
 
+.box-char-pic > .row > .box-char:not(:first-child) {
+	margin-left: 8px
+}
+
 .box-char {
 	padding: 20px;
 	padding-bottom: 15px;
 	border-radius: 3px;
 	margin-bottom: 15px;
+	min-width: 208px;
 }
 
 .box-char.green {
@@ -130,4 +136,13 @@ button:hover {
 
 button:active {
 	background: #00897B;
+}
+
+.mb-2 {
+	margin-bottom: 8px !important;
+}
+
+.row {
+	display: flex;
+	flex-direction: row
 }
